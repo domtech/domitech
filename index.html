@@ -69,6 +69,9 @@
 
   <!-- Main Content -->
   <div class="container">
+      <% for(var i in data){ %> 
+        <h1>123</h1>
+        <% } %>
     <div class="row">
       <div class="col-lg-8 col-md-10 mx-auto">
         <div class="post-preview">
@@ -175,12 +178,11 @@
   <!-- javascript -->
   <script type = "text/javascript">
     window.onload = function() {
-      console.log("123");
       $.getJSON("./data.json", function (data) {
-    $.each(data, function (index, value) {
-       console.log(value);
-    });
-});
+        $.each(data, function (index, value) {
+          console.log(value);
+        });
+      });
     };
 
    
@@ -189,10 +191,7 @@
     
   
   <!-- Bootstrap core JavaScript -->
-  <script type = "text/javascript" src = "./data.json">
-  var userdata = JSON.parse(data);
-  console.log(userdata);
-  </script>
+  
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
