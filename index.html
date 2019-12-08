@@ -69,9 +69,6 @@
 
   <!-- Main Content -->
   <div class="container">
-      <% for(var i in jsondata){ %> 
-        <h1>123</h1>
-        <% } %>
     <div class="row">
       <div class="col-lg-8 col-md-10 mx-auto">
         <div class="post-preview">
@@ -177,7 +174,7 @@
 
   <!-- javascript -->
   <script type = "text/javascript">
-  var jsondata =null;
+   jsondata =null;
     window.onload = function() {
       $.getJSON("./data.json", function (data) {
         jsondata = data;
